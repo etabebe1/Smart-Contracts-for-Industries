@@ -234,7 +234,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Automotive industry p 2.sol": "VehicleMarketplace"
+			"Automotive industry/Automotive industry  smart contract.sol": "VehicleMarketplace"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -248,7 +248,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Automotive industry p 2.sol": {
+		"Automotive industry/Automotive industry  smart contract.sol": {
 			"keccak256": "0x54142b9c0154fb10eb122c0a73c79ef2c8f66e4999ee3679a154ce4dbe303661",
 			"license": "MIT",
 			"urls": [

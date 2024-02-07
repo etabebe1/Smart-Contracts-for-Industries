@@ -80,6 +80,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "checkOwnership",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -89,6 +102,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vehiclePrice",
+						"type": "uint256"
+					}
+				],
+				"name": "setPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -144,7 +170,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Automotive industry smart contract.sol": "Autmotive"
+			"Automotive industry/Automotive industry smart contract-2.sol": "AutmotiveContract"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -158,12 +184,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Automotive industry smart contract.sol": {
-			"keccak256": "0x95b6c05eb00975c1e8c03eab8bc6a704903e3e9cae10065ebea5868bb5dd4cff",
+		"Automotive industry/Automotive industry smart contract-2.sol": {
+			"keccak256": "0x353d6dc9719a8a89a7a066d22735f338417fec6853067006badeafbbac088e7f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://23778df412c430c801783b0588bf7d1fcea185d8d22e2676356c2e192a18c4cd",
-				"dweb:/ipfs/QmdeCSotcXxEoXmVNRn5mMWcfzZsbDMqTuboLA69KHR6B1"
+				"bzz-raw://3038f1fc44bdb4b4b13114c1c3b73dde48358f2dc691ec1a75ba9e85452c7669",
+				"dweb:/ipfs/QmZoJd46ccxUm7tiP8cR9heDNEh9MgRUVk7Meyss6q5V62"
 			]
 		}
 	},
