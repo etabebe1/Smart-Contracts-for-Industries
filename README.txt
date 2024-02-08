@@ -100,3 +100,72 @@ and transferring Ether. The balances mapping keeps track of the balances of diff
 
 |*||| PROJECT 2.2 - Banking industry smart contract |||*|
 
+    contract Banking {
+        # This declares the start of the contract named "Banking".
+
+    mapping (address => uint256) public balances;
+        # This creates a mapping data structure that associates an address
+          with an unsigned integer value representing the balance of that address.
+
+    address payable owner;
+        # This declares a state variable named "owner" of type
+          "address payable" to store the owner's address.
+
+    constructor() {
+        # This is the constructor function that is executed when the contract is deployed. 
+          It initializes the "owner" variable with the address of the contract deployer.
+
+    function deposit() public payable {
+        # This is a public function named "deposit" that allows
+          users to deposit funds into their account. 
+          It is marked as "payable" to receive Ether along with the function call.
+
+    require(msg.value > 0, "Deposit amount must be greater than 0.");
+        # This is a require statement that checks if the deposited amount is greater than 0.
+          If the condition is not met, it reverts the transaction with the provided error message.
+
+    balances[msg.sender] += msg.value;
+        # This increases the balance of the sender's address by
+          the deposited amount.
+
+    function withdraw(uint256 amount) public payable {
+        # This is a public function named "withdraw" that allows
+          the owner to withdraw funds from the contract.
+
+    require(msg.sender == owner, "Only the owner can withdraw!");
+        # This require statement checks if the sender is the owner of the contract.
+          If not, it reverts the transaction with the provided error message.
+
+    require(amount <= balances[msg.sender], "Insufficient funds!");
+        # This require statement checks if the requested withdrawal amount is
+          less than or equal to the balance of the owner's address. 
+          If not, it reverts the transaction with the provided error message.
+
+    require(amount > 0, "Withdrawal amount must be greater than 0!");
+        # This require statement checks if the requested withdrawal amount is greater than 0. 
+          If not, it reverts the transaction with the provided error message.
+
+    payable(msg.sender).transfer(amount);
+        # This transfers the requested withdrawal amount from the contract to the owner's address.
+
+    balances[msg.sender] -= amount;
+        # This decreases the balance of the owner's address by the withdrawn amount.
+
+    function transfer(address payable recipient, uint256 amount) public {
+        # This is a public function named "transfer" that allows
+          the owner to transfer funds to a specified recipient.
+
+    require(amount >= balances[msg.sender], "Insufficient balance!");
+        # This require statement checks if the requested transfer amount is
+          less than or equal to the balance of the owner's address. 
+          If not, it reverts the transaction with the provided error message.
+
+    balances[msg.sender] -= amount;
+        # This decreases the balance of the owner's address by the transferred amount.
+
+    balances[recipient] += amount;
+        # This increases the balance of the recipient's address by the transferred amount.
+
+These are the main lines, functions, and functionalities used in the smart contract.
+It allows users to deposit, withdraw, and transfer funds, 
+while ensuring that only the owner can perform certain actions. 

@@ -22,6 +22,12 @@ contract Banking {
         require(msg.sender == owner, "Only the owner can withdraw!");
         require(amount <= balances[msg.sender], "Insufficent funds!");
         require(amount > 0, "Withdrawal amount must be greater than 0!");
+
+        // see the difference in this smart contract and part 2
+        // to prevent re-entrancy attack we've subtructed a given amount form user balance
+        // and then withdraw the fund from the account  
+        // that is what we have done in part two 
+        // see the example in part - 2
         payable (msg.sender).transfer(amount);
         balances[msg.sender] -= amount;
     }

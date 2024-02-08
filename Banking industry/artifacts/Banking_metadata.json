@@ -129,11 +129,11 @@
 	},
 	"sources": {
 		"Banking industry/Banking industry smart contract.sol": {
-			"keccak256": "0x5a95ab768538842475abb39330229f08ff56f53bb84312987434a8b841d96fc4",
+			"keccak256": "0x21f77bb74ae72d3a5af20421054c59c8df45c123f8dde0a4e0552e19c71e91e5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e8f82354b76b349d84e8a45db87a11997c31d5ddb0eff4faa041bd2508836caf",
-				"dweb:/ipfs/QmZtDL9S7pBCJRdj9f43nnUu9ToPRrDckVC4BZ2YfZS6om"
+				"bzz-raw://6b9f856b4ce63b423b35c5de21381f13c08c994f6837351f731f396a270ce565",
+				"dweb:/ipfs/QmdqsAzWJx4wP2yZ5YNeeYp9fugx7tWmxU3XKP3NTPSoUC"
 			]
 		}
 	},
