@@ -11,25 +11,6 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -103,7 +84,7 @@
 				],
 				"name": "transfer",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -148,11 +129,11 @@
 	},
 	"sources": {
 		"Banking industry/Banking industry smart contract.sol": {
-			"keccak256": "0x9a4715be6a31a3194723c82d70c76921e02eb65566d761c05f70a67240ea566d",
+			"keccak256": "0x5a95ab768538842475abb39330229f08ff56f53bb84312987434a8b841d96fc4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://70db1b54b4292e3047c1da3e989507568325d3eaf239286af1be7cd7e40fde5b",
-				"dweb:/ipfs/QmTdRDiFYcYgNv1zrLzWm3GVPv8HYHAuKiRQSpDTdN5Gwy"
+				"bzz-raw://e8f82354b76b349d84e8a45db87a11997c31d5ddb0eff4faa041bd2508836caf",
+				"dweb:/ipfs/QmZtDL9S7pBCJRdj9f43nnUu9ToPRrDckVC4BZ2YfZS6om"
 			]
 		}
 	},

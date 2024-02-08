@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract Banking {
     // state variable
-    mapping (address => uint256) public balances;
+    mapping (address => uint256) balances;
     address payable owner;
 
     // constructor
@@ -27,8 +27,8 @@ contract Banking {
     }
 
     // function to transfer funds 
-    function transfer(address payable recipent, uint256 amount) public {
-        require(amount >= balances[msg.sender], "Insufficent fund!");
+    function transfer(address payable recipent, uint256 amount) public payable {
+        require(amount <= balances[msg.sender], "Insufficent fund!");
         require(amount > 0, "Amount must be greater than 0!");
         balances[msg.sender] -= amount;
         balances[recipent] += amount;
