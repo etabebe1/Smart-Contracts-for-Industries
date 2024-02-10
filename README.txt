@@ -488,4 +488,6 @@ statements for validations and modifiers for access control.
 
     # Automated Car Rental Services: Companies can use this contract to automate their 
     car rental services, reducing overhead and improving efficiency.
-    
+
+
+|*||| PROJECT 5.2 - Decentralizing car leasing and sell smart contract |||*|
