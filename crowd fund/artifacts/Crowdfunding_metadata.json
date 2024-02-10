@@ -9,12 +9,12 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "fundingGoalInEther",
+						"name": "_goal",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "durationInMinute",
+						"name": "_duration",
 						"type": "uint256"
 					}
 				],
@@ -23,15 +23,21 @@
 			},
 			{
 				"anonymous": false,
+				"inputs": [],
+				"name": "CampaignFailed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "totalContributions",
+						"name": "totalFundsRaised",
 						"type": "uint256"
 					}
 				],
-				"name": "DeadlineReached",
+				"name": "CampaignSuccessful",
 				"type": "event"
 			},
 			{
@@ -40,7 +46,7 @@
 					{
 						"indexed": false,
 						"internalType": "address",
-						"name": "backer",
+						"name": "contributor",
 						"type": "address"
 					},
 					{
@@ -50,7 +56,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "FundTransfered",
+				"name": "ContributionReceived",
 				"type": "event"
 			},
 			{
@@ -58,19 +64,51 @@
 				"inputs": [
 					{
 						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "totalContributions",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "GoalReached",
+				"name": "FundsWithdrawn",
 				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "checkCampaignStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [],
 				"name": "contribute",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "contributions",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -87,34 +125,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "durationInMinute",
-						"type": "uint256"
-					}
-				],
-				"name": "decreaseDeadline",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "durationInMinute",
-						"type": "uint256"
-					}
-				],
-				"name": "extendDeadline",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "getCurrentBalance",
+				"name": "getContractBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -127,45 +139,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "getRefund",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "goalSet",
+				"name": "goal",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "isCompleted",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "isFunded",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -186,7 +165,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "totalContributions",
+				"name": "reclaimFunds",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalFundsRaised",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -199,7 +185,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "withdraw",
+				"name": "withdrawFunds",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -218,7 +204,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"crowd fund/crowd fund smart contract 1.sol": "Crowdfunding"
+			"crowd fund/crowd fund smart contract 3.sol": "Crowdfunding"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -232,12 +218,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"crowd fund/crowd fund smart contract 1.sol": {
-			"keccak256": "0x0b8f03509dd1f327d5ed53a7c964a667c29d855f837cd7e648857b09806b103c",
+		"crowd fund/crowd fund smart contract 3.sol": {
+			"keccak256": "0x3f13421511df6a3fac7161c5919482f94c5ad8a1232327aa2b1c8880e30a2180",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ffebe84debee771bb51655c6ebe16e525d2e5020224ef210c5822e55b66c1173",
-				"dweb:/ipfs/QmNVMsJcLvXgf4JRbpqJCTv6EQiNiNn15bBQYNwf6UhzqX"
+				"bzz-raw://092683c8015de671e806fae5ff8a5387dd5f91ccc922777f7a1dd28f9185d05a",
+				"dweb:/ipfs/QmUKaWyuMhKityjBwaBbqjHRrWKdot58pZz6wixHCy35Ya"
 			]
 		}
 	},
