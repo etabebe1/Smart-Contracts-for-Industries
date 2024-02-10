@@ -335,3 +335,65 @@ This smart contract is almost similar to PROJECT 3.1 - Crowd funding smart contr
     # CampaignSuccessful: Announced when the campaign achieves or surpasses its funding goal.
     
     # CampaignFailed: Announced if the campaign does not meet its funding goal by the deadline.
+
+
+|*||| Crypto Exchange Smart Contract |||*|
+
+|*||| PROJECT 4.1 - Crypto exchange smart contract |||*|
+
+This Ethereum smart contract provides a decentralized exchange platform for 
+trading ERC-20 tokens. It facilitates token deposits, withdrawals, and trades
+between users, while ensuring secure and transparent transactions. 
+The exchange operates with a fixed fee model, charging a commission for each trade
+executed on the platform.
+
+=> Key Features:
+
+    # Decentralized Trading: Users can trade ERC-20 tokens directly with each other 
+      without the need for intermediaries, enhancing privacy and reducing reliance on
+      centralized entities.
+    
+    # Token Management: The contract owner can authorize or revoke tokens for trading 
+      on the platform, allowing for a curated and secure trading environment.
+    
+    # Fixed Fee Model: Charges a fixed fee of 0.1 ether per trade, providing a 
+      straightforward and predictable cost structure for users.
+    
+    # Transparent Balances: User balances for each token are publicly accessible, 
+      ensuring transparency and trust in the platform's operations.
+
+=> Main Components:
+
+    # Owner: The deployer of the contract, who has exclusive rights to authorize
+      tokens, revoke tokens, and adjust trading fees.
+    
+    # Balances: A nested mapping that tracks each user's balance for each authorized
+      token, enabling secure and isolated handling of funds.
+    
+    # Authorized Tokens: A mapping that indicates whether a token is authorized for trading
+      on the platform, ensuring that only approved tokens are transacted.
+
+=> Key Functions:
+
+    # Deposit: Allows users to deposit authorized tokens into the exchange,
+      increasing their trading balance.
+    
+    # Withdraw: Enables users to withdraw tokens from their exchange balance back
+      to their personal wallet.
+    
+    # AuthorizeToken/RevokeToken: Permits the contract owner to manage which tokens are
+      authorized for trading on the exchange.
+    
+    # Trade: Facilitates the trading of authorized tokens between users for a
+      fixed ether fee, adjusting balances accordingly.
+
+
+=> Events:
+
+    
+    # deposit: Emitted when a user deposits tokens into the exchange.
+    
+    # withdraw: Emitted when a user withdraws tokens from the exchange.
+    
+    # trade: Emitted upon the successful execution of a trade between two users.
+
