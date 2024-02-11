@@ -21,6 +21,7 @@ contract AdvancedCarLeasingAndSales {
         uint256 totalPurchased; // Total cars purchased by the user
     }
 
+    // >> State Variable << //
     // Mapping from car ID to Car struct
     mapping(uint256 => Car) public cars;
     // Mapping from user address to User struct

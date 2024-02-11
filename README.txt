@@ -491,3 +491,137 @@ statements for validations and modifiers for access control.
 
 
 |*||| PROJECT 5.2 - Decentralizing car leasing and sell smart contract |||*|
+
+The Advanced Car Leasing and Sales contract is a sophisticated Ethereum smart contract 
+designed to manage the leasing and selling of cars on the blockchain. This contract 
+offers a decentralized platform for car owners to lease or sell their vehicles directly 
+to other users without intermediaries. Utilizing the security and transparency of the 
+Ethereum network, the contract ensures trust between parties and streamlines the leasing 
+and purchasing process.
+
+=> Key Features:
+
+    # Car Registration: Car owners can register their cars on the blockchain, specifying 
+      details such as price, deposit required for leasing, lease term, and availability 
+      for lease or sale. Each car is assigned a unique identifier upon registration.
+
+    # Leasing Cars: Users can lease cars by providing a deposit that matches the 
+      owner's specified amount. The contract records the lease term and automatically 
+      calculates the lease end date.
+
+    # Lease Extension: Lessees have the option to extend the lease on their current 
+      vehicles by paying an additional deposit, allowing for greater flexibility.
+
+    # Purchasing Cars: Users can also choose to purchase cars outright. The contract 
+      facilitates these transactions by transferring ownership to the buyer upon receipt 
+      of the correct purchase price.
+
+    # User Statistics: The contract tracks user activities, including the total number of 
+      cars leased and purchased, providing insights into user engagement and trustworthiness.
+
+    # Event Logging: Key actions such as car registration, leasing, purchasing, 
+      and lease extensions emit events for transparency and easy tracking on the blockchain.
+
+=> Advantages:
+
+    # Decentralization: By operating on the Ethereum blockchain, the contract removes 
+      the need for traditional intermediaries, reducing costs and increasing efficiency.
+
+    # Transparency: All transactions and car statuses are transparent and immutable, 
+      ensuring trust among users.
+
+    # Flexibility: Users can easily lease, extend leases, or purchase 
+      cars, offering a flexible and user-friendly experience.
+
+    # Security: Leveraging smart contract technology, the platform ensures that all 
+      transactions are secure and that terms are strictly enforced according to the contract.
+
+=> Use Cases:
+
+    # Peer-to-Peer Car Leasing and Sales: Ideal for individuals looking 
+      to lease or sell their vehicles in a peer-to-peer manner without going through 
+      traditional rental or sales companies.
+
+    # Fleet Management: Businesses with multiple vehicles can manage their fleets more 
+      efficiently, leasing out idle cars or selling them directly on the platform.
+
+
+|*||| Accounting Smart Contract |||*|
+
+|*||| PROJECT 6.1 - DeFi accounting purpose smart contract |||*|
+
+The Accounting smart contract is designed to facilitate basic financial operations 
+within the Ethereum blockchain. It provides a secure and transparent framework for 
+conducting transactions, tracking balances, and managing deposits and withdrawals. 
+This contract is ideal for applications requiring a ledger of transactions and account 
+balance management without relying on external systems.
+
+=> Features
+
+    # Deposit Funds: Users can deposit ETH into the contract. 
+      Each deposit is recorded, and the user's balance is updated accordingly.
+    
+    # Withdraw Funds: Users can withdraw ETH from their balance, 
+      assuming they have sufficient funds. Withdrawals are also recorded for transparency.
+    
+    # Transaction Recording: The contract allows for the recording of transactions 
+      between addresses, including the sender, receiver, amount, and a description. 
+      This feature is useful for keeping a transparent record of all transfers made 
+      within the contract.
+    
+    # Balance Tracking: Each address's balance is tracked within the 
+      contract, updated with each deposit, withdrawal, or transaction.
+    
+    # Ownership Management: The contract is owned by the address that 
+      deploys it. Certain operations, such as withdrawing contract funds or administrative
+      tasks, can be restricted to the owner.
+    
+    # Event Logging: All key actions (deposits, withdrawals, and 
+      transactions) emit events. These events can be monitored by external applications 
+      or interfaces to react to contract activities in real time.
+
+Use Cases
+
+    # Peer-to-Peer Payments: Facilitate direct payments between users, 
+      recording each transaction on the blockchain.
+    
+    # Microtransaction Platforms: Manage a high volume of small transactions efficiently 
+      and transparently.
+    
+    # Escrow Services: Hold funds in escrow until specified conditions are 
+      met, with the ability to track every stage of the process.
+    
+    # Financial Applications: Serve as a backend for DApps requiring accounting 
+      functionalities, such as balance management and transaction history.
+
+=> How It Works
+
+    # Depositing Funds: Users can deposit ETH into the contract 
+      by calling the Deposit function. The transaction is logged, 
+      and the user's balance within the contract is updated.
+    
+    # Withdrawing Funds: Users can withdraw ETH from their balance 
+      by calling the Withdraw function, provided they have enough balance.
+
+    # Recording Transactions: The addTransaction function allows recording transfers between 
+      users, adjusting balances accordingly, and logging the 
+      details for transparency.
+    
+    # Querying Transactions: The contract provides functions to query the 
+      total number of transactions and retrieve specific transaction details by ID.
+
+=> Security Features
+
+   >> The contract includes basic security features such as:
+
+     # Validation to prevent transactions to zero addresses.
+     
+     # Checks to ensure transactions are only recorded if there are sufficient funds.
+     
+     # Owner-only restrictions for sensitive operations.
+
+This smart contract is a foundational tool for developing decentralized applications that 
+require an internal system of accounting and transaction management.
+
+
+|*||| PROJECT 6.2 - DeFi accounting purpose smart contract |||*|
