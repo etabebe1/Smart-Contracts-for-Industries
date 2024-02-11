@@ -661,3 +661,8 @@ invaluable resource for any blockchain-based project or application that demands
 rigorous financial oversight and capabilities. Its event logging system further ensures 
 that all transactions and operations are transparently recorded on the blockchain, 
 providing an immutable and verifiable record of financial activities.
+
+
+|*||| Government Citizen Info Tracking Smart Contract |||*|
+
+|*||| PROJECT 7.1 - Government smart contract |||*|
