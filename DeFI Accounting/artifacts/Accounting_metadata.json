@@ -286,11 +286,11 @@
 	},
 	"sources": {
 		"DeFI Accounting/DeFi Accounting S_C 1.sol": {
-			"keccak256": "0xee0670ea87ced8c92db705b2a872c1840df214a2e9f2e83e47b7802671832285",
+			"keccak256": "0x7f8915cbdfd08b83e608fc8895f90efb209072e0b4551732a05e3c10858cd2d0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dabc3daba07fc4e0747e013c3dc941833bbd7e74ee0d47eda27c9a56536f1244",
-				"dweb:/ipfs/QmP7C5pEmvV32VJWymWShuEjSYG3Bev7x4uQcKP3jDfGX9"
+				"bzz-raw://1dd58b59485c21d679f4af2bd45ec9e2cea652a70f83388a32e0a3c4cab07e5a",
+				"dweb:/ipfs/QmcM149f1incPQm594DSRU9DHxoZaihxQ86DWPepDH58DF"
 			]
 		}
 	},
