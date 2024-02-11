@@ -122,37 +122,3 @@ contract GCITContract {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// contract GCITContract {
-
-//     // Grant or revoke official status (owner only)
-//     function toggleOfficialStatus(address user) external onlyOwner {
-//         isOfficial[user] = !isOfficial[user];
-//         if (isOfficial[user]) {
-//             officials.push(user);
-//         } else {
-//             // Remove from officials array; left as an exercise due to complexity
-//         }
-//     }
-// }
