@@ -821,3 +821,73 @@ It introduces several key features for enhanced operational control and transpar
     ensures secure, decentralized management of oil wells, production data, and financial 
     transactions.
 
+
+|*||| Inheritance Smart Contract Overview |||*|
+
+|*||| PROJECT 9.1 - Property Inheritance smart contract |||*|
+
+The Inheritance Smart Contract is a blockchain-based solution designed to manage the 
+distribution of digital assets (in this form, Ether) as inheritance. 
+It leverages the Ethereum blockchain to provide a transparent, secure, and immutable way 
+to handle inheritances, ensuring that beneficiaries receive their due share as per 
+the owner's wishes.
+
+#### Key Features
+
+- **Ownership**: The contract is initialized with an owner, typically the person who 
+    creates the contract and whose assets are to be distributed.
+
+- **Beneficiary Management**: Allows the owner to add or remove beneficiaries. 
+    This ensures flexibility in managing who should receive a portion of the assets.
+
+- **Inheritance Deposits**: Enables the accumulation of assets (Ether) in the contract 
+    that can later be distributed among beneficiaries. Anyone can contribute to a 
+    beneficiary's inheritance, making it versatile for collective family or friend contributions.
+
+- **Secure Distribution**: The contract owner can distribute assets to beneficiaries, 
+    ensuring that only designated parties receive the specified amounts.
+
+#### Functionalities
+
+- **receivedInheritance**: Allows an address to deposit Ether into their inheritance 
+    account within the contract.
+
+- **addBeneficiary**: Permits the owner to add an address as a beneficiary, enabling it 
+    for future distributions.
+
+- **removeBeneficiary**: Allows the owner to remove an address from the list of 
+    beneficiaries, preventing it from receiving any further assets.
+
+- **distributeBeneficiary**: Enables the owner to distribute specified amounts of Ether 
+    from the contract to the beneficiaries. It ensures that only the owner can perform 
+    distributions and that sufficient funds are available.
+
+#### Events
+
+- **InheritanceReceived**: Emitted when Ether is deposited into the contract as inheritance.
+
+- **BeneficiaryAdded**: Signaled when a new beneficiary is added to the contract.
+
+- **BeneficiaryRemoved**: Emitted when a beneficiary is removed from the contract.
+
+- **InheritanceDistributed**: Announced when the inheritance is distributed to a beneficiary.
+
+#### Use Cases
+
+- **Estate Planning**: Ideal for individuals looking to manage their digital assets and 
+    ensure they are passed on to the intended beneficiaries securely.
+
+- **Collective Inheritances**: Enables families or groups to contribute to a member's 
+    inheritance, offering a consolidated way to manage collective contributions.
+
+#### Advantages
+
+- **Immutable Record Keeping**: Utilizes the Ethereum blockchain for transparent and 
+    tamper-proof record-keeping of asset distribution.
+
+- **Decentralization**: Eliminates the need for intermediaries, allowing direct management 
+    and distribution of assets to beneficiaries.
+
+- **Transparency and Security**: Ensures that all transactions are transparent and secure, 
+    giving peace of mind to all parties involved.
+
