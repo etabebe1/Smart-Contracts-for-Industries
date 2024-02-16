@@ -891,3 +891,118 @@ the owner's wishes.
 - **Transparency and Security**: Ensures that all transactions are transparent and secure, 
     giving peace of mind to all parties involved.
 
+|*||| PROJECT 9.2 - Advanced Property Inheritance smart contract |||*|
+
+To make the Inheritance smart contract more advanced, we can introduce several new features:
+
+1. **Time-Locked Inheritance**: Beneficiaries can only claim their inheritance after a 
+     certain date.
+
+2. **Conditional Claims**: Implement conditions under which beneficiaries can claim 
+     their inheritances, such as reaching a certain age or fulfilling specific requirements.
+
+3. **Multiple Owners and Executors**: Allow for multiple contract owners or designated 
+     executors who can manage the distribution of inheritances.
+
+4. **Emergency Stop Mechanism**: Implement a way to pause the contract in case of 
+     discovered vulnerabilities or other critical issues.
+
+5. **Claim Process for Beneficiaries**: Enable beneficiaries to claim their inheritance a
+     ctively, transferring the amount directly to their address.
+
+This advanced version introduces several new concepts:
+
+- **Pausing the Contract**: The contract can be paused and unpaused by the owner, halting 
+    all beneficiary-related actions when necessary.
+
+- **Executors**: Besides the owner, designated executors can manage beneficiaries and 
+    distribute inheritances.
+
+- **Time-Locked Claims**: Beneficiaries are only allowed to claim their inheritance 
+    after a certain date, enhancing security and adhering to potential will stipulations.
+
+- **Claim Functionality for Beneficiaries**: Beneficiaries must actively claim their 
+    inheritance, which is then transferred to their address.
+
+- **Emergency Stop Mechanism**: Implemented through
+
+
+
+||#|| Real Estate industry smart contract ||#||
+
+|*||| PROJECT 10.1 - Real Estate industry smart contract |||*|
+
+### Real Estate Smart Contract Overview
+
+This smart contract offers a decentralized solution for listing, selling, and purchasing 
+real estate properties on the Ethereum blockchain. It employs the OpenZeppelin SafeMath 
+library to ensure safe arithmetic operations, preventing overflows and underflows. 
+The contract is designed to bring transparency, efficiency, and security to real 
+estate transactions in the digital age.
+
+#### Key Features
+
+- **Decentralized Listings**: Property owners can list their properties for sale directly 
+    on the blockchain, providing details such as price, name, location, and description.
+
+- **Ownership Management**: The contract facilitates the transfer of property ownership 
+    upon sale, updating the blockchain records accordingly to reflect the new owner.
+
+- **Secure Transactions**: Utilizes Ethereum's secure transaction mechanism to handle 
+    property sales, ensuring that transfers are legitimate and funds are correctly allocated.
+
+- **Transparent History**: Every transaction and change in ownership is recorded on the 
+    blockchain, offering a transparent and immutable history of each property.
+
+- **Event Logging**: Events are emitted for key actions, such as when a property is sold, 
+    providing external applications with the means to monitor and react to contract activity.
+
+#### Functionality
+
+- **List Property**: Allows property owners to list their real estate on the blockchain 
+    by specifying details like price and location, making it available for sale.
+
+- **Buy Property**: Enables buyers to purchase available properties, transferring 
+    ownership and funds securely through the contract.
+
+- **Property Management**: Owners can manage their property listings, adjusting details 
+    as necessary to reflect current offerings.
+
+#### Security Measures
+
+- Uses OpenZeppelin's SafeMath library to prevent arithmetic errors.
+
+- Ensures only the property owner can list and manage property details.
+
+- Verifies sufficient funds are sent for property purchases, with automatic refunds for overpayments.
+
+#### Use Cases
+
+This contract is ideal for real estate agents, property owners, and buyers looking for 
+a secure, transparent, and efficient platform to conduct real estate transactions. 
+It simplifies the process of listing and buying properties while ensuring the integrity 
+and security of each transaction through the Ethereum blockchain.
+
+### Integration
+
+Easily integrate this smart contract into your Ethereum-based dApps to offer decentralized 
+real estate listing and purchasing services. Whether for a dedicated real estate platform 
+or a broader marketplace, this contract provides the foundational features needed for 
+secure and transparent property transactions.
+
+---
+
+
+|*||| PROJECT 10.2 - Advanced Real Estate industry smart contract |||*|
+
+
+
+
+
+
+
+
+
+
+
+
