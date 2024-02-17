@@ -995,12 +995,108 @@ secure and transparent property transactions.
 
 |*||| PROJECT 10.2 - Advanced Real Estate industry smart contract |||*|
 
+The advanced version of the Real Estate smart contract introduces several enhancements and new functionalities over the basic version. This contract is designed to provide a more robust and secure platform for real estate transactions on the Ethereum blockchain. Below is an overview of the key features and improvements included in this version:
+
+### Advanced Features:
+
+1. **Ownership Management:** Incorporates direct ownership management within the contract, 
+    allowing for a straightforward transfer of ownership without relying on external libraries. 
+    This simplifies the ownership transfer process and enhances security.
+
+2. **Enhanced Security:** Implements SafeMath for all arithmetic operations to prevent 
+    overflow and underflow vulnerabilities. This ensures that the contract's mathematical calculations are secure and reliable.
+
+3. **Property Listing by Owner Only:** Restricts the listing of properties for sale to the 
+     contract owner only, centralizing control and preventing unauthorized listings. 
+     This feature is essential for maintaining the integrity of the listings and ensuring 
+     that only verified properties are made available for sale.
+
+4. **Direct Property Purchasing:** Allows buyers to purchase properties directly from the 
+     listing, provided they meet the asking price. This simplifies 
+     the transaction process and makes it more efficient by enabling direct transfers of 
+     ownership upon payment.
+
+5. **Event Emissions for Key Actions:** Every significant action, such as the transfer of 
+     ownership, listing of a property, and sale of a 
+     property, triggers an event. These events facilitate tracking and verification of 
+     transactions on the blockchain, ensuring transparency and accountability.
+
+6. **Ownership Transfer Functionality:** Includes a dedicated function for transferring 
+     contract ownership, enhancing the flexibility and control over the contract's 
+     administration. This feature is crucial for future-proofing the contract and 
+     allowing for administrative adjustments.
+
+### Outlook:
+
+This advanced Real Estate smart contract is tailored for the evolving needs of the 
+real estate market on the blockchain. By focusing on security, transparency, and 
+efficient management, it offers a comprehensive solution for real estate transactions. 
+Its design not only addresses the limitations of earlier versions but also introduces 
+features that anticipate future developments in real estate blockchain applications. 
+Whether for individual property owners, real estate companies, or investors, this 
+contract provides a solid foundation for secure, transparent, and efficient real estate 
+transactions on the Ethereum blockchain.
 
 
 
 
 
 
+
+### Retail Smart Contract Overview
+
+The Retail smart contract is a decentralized application deployed on the Ethereum 
+blockchain, designed to manage the inventory and sale of products in a retail setting. 
+This contract allows for the addition, updating, and purchasing of products, making it 
+a versatile tool for retail business owners looking to leverage blockchain technology 
+for inventory management and sales processing. Below are the key features and 
+functionalities of the Retail smart contract:
+
+#### Key Features
+
+- **Product Management:** Enables the owner to add new products to the inventory, along 
+    with their price and stock level. Each product is identified by a unique `bytes32` name.
+
+- **Price and Stock Updates:** Allows the owner to update the price and stock of existing 
+    products, ensuring the inventory remains current and accurate.
+
+- **Purchasing Functionality:** Customers can purchase products by specifying the product 
+    name and quantity, provided they send enough Ether to cover the total price. The stock level of the product is automatically adjusted upon purchase.
+
+- **Ownership Management:** Includes functions to grant and revoke access to the smart 
+    contract, allowing for secure management of administrative privileges.
+
+- **Contract Termination:** The owner has the ability to destroy the contract, removing it 
+    from the blockchain and sending any remaining Ether to the owner's address.
+
+
+#### Functionalities
+
+
+- `addProduct(bytes32 name, uint256 price, uint256 stock)`: Adds a new product to the inventory.
+
+- `updateProductPrice(bytes32 name, uint256 price)`: Updates the price of an existing product.
+
+- `updateProductStock(bytes32 name, uint256 stock)`: Updates the stock level of an existing product.
+
+- `purchase(bytes32 name, uint256 quantity)`: Allows customers to purchase a specified quantity of a product.
+
+- `getProduct(bytes32 name)`: Returns the details of a product, including its name, price, and stock level.
+
+- `grantAccess(address payable user)`: Grants contract management access to a new owner.
+
+- `revokeAccess(address payable user)`: Revokes management access from the current owner, 
+   reverting it back to the original owner.
+
+- `destroyContract()`: Destroys the contract and sends any remaining Ether to the owner's address.
+
+#### Security Features
+
+- **Ownership Verification:** Ensures that only the contract owner can add, 
+    update, or remove products and perform administrative tasks.
+
+- **Consistency Checks:** Validates that operations such as price and stock 
+    updates are performed on existing products.
 
 
 
