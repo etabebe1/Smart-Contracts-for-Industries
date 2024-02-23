@@ -1040,7 +1040,9 @@ transactions on the Ethereum blockchain.
 
 
 
+||#|| Retail industry smart contract ||#||
 
+|*||| PROJECT 11.1 - Retail Estate industry smart contract |||*|
 
 
 ### Retail Smart Contract Overview
@@ -1099,6 +1101,61 @@ functionalities of the Retail smart contract:
     updates are performed on existing products.
 
 
+|*||| PROJECT 11.2 - Advanced Retail Estate industry smart contract |||*|
 
+### Advanced Retail Smart Contract Overview
 
+The Advanced Retail Smart Contract is a sophisticated blockchain application designed
+ for the retail industry, enabling business owners to manage their inventory, sales, 
+ and customer loyalty programs efficiently on the Ethereum network. This smart contract 
+ introduces advanced features such as dynamic pricing, discounts, loyalty points, and 
+ product categorization, making it a comprehensive solution for retail operations.
+
+#### Key Features:
+
+- **Product Management:** Easily add, update, and manage products with properties 
+    like name, price, stock levels, loyalty points, and categories.
+
+- **Dynamic Pricing and Discounts:** Implement time-limited discounts on products to 
+    stimulate sales. The contract calculates the final price considering any active 
+    discounts, allowing for flexible pricing strategies.
+
+- **Loyalty Points System:** Reward customers with loyalty points for their purchases, 
+    which can be configured per product. This feature encourages repeat business and 
+    customer retention.
+
+- **Category Management:** Organize products into categories, making inventory management 
+    more straightforward and enhancing the shopping experience for customers.
+
+- **Ownership and Access Control:** Functions that modify the state of the contract 
+    (such as adding products or updating prices) are protected by an ownership check, 
+    ensuring that only authorized users can perform these operations.
+
+#### Events:
+
+- The contract emits events for significant actions like adding new products, 
+  purchasing products, updating prices or stock levels, applying discounts, and 
+  earning loyalty points. These events assist in tracking contract activity off-chain.
+
+#### Security Features:
+
+- The contract includes basic security features such as ownership verification to 
+  prevent unauthorized access to critical functions.
+
+#### Extensibility:
+
+- The contract is designed with extensibility in mind, allowing for the addition of 
+  features like redeeming loyalty points, managing customer profiles, and integrating 
+  with external systems or other smart contracts.
+
+### Use Cases:
+
+- **Retail Storefronts:** Physical and online retailers can use this contract to 
+    manage their inventory and sales on the blockchain, providing transparency and security.
+
+- **E-Commerce Platforms:** E-commerce platforms can integrate this contract to offer 
+    dynamic pricing, discounts, and loyalty programs, enhancing customer engagement and satisfaction.
+
+- **Supply Chain Integration:** Businesses can integrate this contract into their 
+    supply chain systems to provide real-time inventory updates and streamline operations.
 
