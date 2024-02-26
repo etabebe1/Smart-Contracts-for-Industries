@@ -276,7 +276,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getMemebership",
+				"name": "getMembership",
 				"outputs": [
 					{
 						"components": [
@@ -317,7 +317,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getMemebershipTaken",
+				"name": "getMembershipTaken",
 				"outputs": [
 					{
 						"internalType": "uint256[]",
@@ -950,11 +950,11 @@
 			]
 		},
 		"Grid-GPT contract/GridGPT smart contract.sol": {
-			"keccak256": "0x03231044f155e87661c1e6b5af3177c6b0546fce9a3bf0578693d4f6dfd48c00",
+			"keccak256": "0xc9035eb97d584c1c1c4ae35e90856a9c1bb428951fd6c542d85cb4e1f9948e3d",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://66508d8ffd6789c86672894a634cc75837d9fbb8135afcef7ab02bd9e7d7b9b7",
-				"dweb:/ipfs/QmWJZdk9DQjRSFn1MASyBp2V3GysHFrtrpsSJC3Hxnr8Ho"
+				"bzz-raw://44d1e77e743ce70fccf4879611d3693491df114baa36de8316f76e1e073f9845",
+				"dweb:/ipfs/QmSeNnFMvkB1jchfUWmUyihMmsHBzbux9AqDdkLtt7Pnoq"
 			]
 		}
 	},
